@@ -205,6 +205,11 @@ body, html {
             text-align: center;
         }
     
+        .social-media div img {
+            width: 75px; /* Adjust image size as needed */
+            margin: 0 auto; /* Center images */
+        }
+        
         .project-section, .project-section1 {
             flex-direction: column;
         }
