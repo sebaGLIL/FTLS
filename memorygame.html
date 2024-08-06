@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FTLS MEMORY</title>
+    <link rel="stylesheet" href="memory.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure responsive behavior on mobile devices -->
+</head>
+<body>
+    <div id="header">
+        <div id="how-to-play" class="info-text">How to Play</div>
+        <h1>FTLS MEMORY</h1>
+        <a href="membersarea.html">Return To Site</a>
+    </div>
+    <button id="easy">Easy (32 squares)</button>
+    <button id="medium">Medium (48 squares)</button>
+    <button id="hard">Hard (72 squares)</button>
+    <div id="gameBoard"></div>
+    <p>Moves: <span id="moves">0</span></p>
+
+    <!-- Popup for instructions -->
+    <div id="popup" class="hidden">
+        <p>Match all the pairs to win the game.</p>
+        <p>Click on two squares to reveal if they are a match.</p>
+        <p>If they are not a pair, the 2 cards turn back.</p>
+        <p>Remember their locations on the board.</p>
+        <p>2 clicks = 1 move, fewer moves the better.</p>
+        <p>When you find a pair, the cards remain turned.</p>
+        <p>Continue until all pairs are found.</p>
+        <button id="close-popup">Close</p>
+    </div>
+
+    <script src="memoryg.js"></script>
+</body>
+</html>
