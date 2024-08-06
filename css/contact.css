@@ -1,0 +1,314 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px; /* Increased padding for a thicker band */
+    background-color: #f4f4f4;
+    font-size: 1.2em;
+}
+
+.logo-title {
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    /* Add more styling as required */
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu a, .menu button {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.highlight-reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 175px;
+    background-color: #000;
+    position: relative;
+}
+
+.highlight-reel span {
+    font-size: 3em;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: absolute;
+}
+
+.highlight-reel-left span {
+    animation: flyLeft 0.75s linear infinite;
+}
+
+.highlight-reel-right span {
+    animation: flyRight 0.75s linear infinite;
+}
+
+@keyframes flyLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+}
+
+@keyframes flyRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+}
+
+ .highlight-reel img {
+        width: 50%; /* Adjust for smaller screens */
+    }
+
+.container {
+    display: flex;
+}
+
+.titles {
+    width: 30%;
+}
+
+.content {
+    width: 100%;
+    position: relative;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Adds padding around the content */
+    max-width: 1200px; /* Adjust this value based on your design preference */
+}
+
+.contact-info {
+    width: 100%;
+    padding-right: 0px; /* Adds some space between the text and the image */
+}
+
+.contact-image {
+    width: 100%;
+}    
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+}
+
+
+.social-media {
+    text-align: center; /* Center aligns the content */
+    margin: 20px 0; /* Adds vertical margin for spacing */
+    padding: 20px; /* Adds padding for better spacing */
+    background-color: #f4f4f4; /* Light gray background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.social-media h2 {
+    margin-bottom: 20px; /* Space between the title and images */
+    color: #333; /* Dark gray text color */
+    font-size: 24px; /* Larger font size for visibility */
+}
+
+.social-media a {
+    margin: 0 10px; /* Horizontal spacing between links */
+    display: inline-block; /* Aligns links in a row */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.social-media img {
+    width: 50px; /* Standard size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth fade effect on hover */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Enlarges icon slightly on hover */
+    opacity: 0.8; /* Slightly fades the icon on hover */
+}
+
+.contact-form {
+    width: 50%; /* Adjust based on your layout */
+    display: grid; /* Using grid to arrange form elements */
+    grid-gap: 20px; /* Increased gap for better spacing */
+    margin: auto; /* Centering the form in the available space */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Larger font size for the form heading */
+}
+
+.contact-form label {
+    display: block;
+    font-size: 18px; /* Larger font size for readability */
+    margin-bottom: 10px; /* More space below each label */
+}
+
+.contact-form input[type="email"] {
+    padding: 15px;
+    width: calc(100% - 32px); /* Adjust width to account for padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger text in inputs for readability */
+}
+
+.contact-form textarea {
+    width: 100%;
+    height: 150px; /* Increased height */
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Border and padding included in width/height */
+}
+
+.contact-form input[type="submit"] {
+    padding: 15px;
+    width: calc(33% - 32px); /* Adjust width to account for padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Larger text in inputs for readability */
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Focus styles for inputs and textarea */
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #007bff; /* Blue border for focus */
+    outline: none;
+}
+
+
+.newsletterForm {
+    text-align: center;
+    margin: 20px;
+}
+
+.newsletterForm form {
+    margin-top: 20px;
+}
+
+input[type="email"], button {
+    padding: 10px;
+    margin: 5px 0; /* Spacing between inputs and button */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Makes input take full width */
+    width: 80%; /* Relative width to parent */
+    max-width: 300px; /* Maximum width */
+    margin-left: auto; /* Centers the input and button */
+    margin-right: auto;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: #007ba7;
+}
+
+@media (max-width: 768px) {
+    .top-band {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a, .menu button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;  /* Ensure full width for easier tapping */
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-section, .social-media {
+        flex-direction: column;
+        width: 100%; /* Ensures that the container takes full width */
+        padding: 10px 0; /* Adds vertical padding */
+    }
+
+    .contact-form, .social-media div {
+        width: 100%; /* Ensures elements within these divs take full width */
+    }
+
+    .contact-form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form input[type="email"], 
+    .contact-form textarea, 
+    .contact-form input[type="submit"] {
+        width: 90%; /* Makes form inputs almost full width */
+        margin: 8px auto; /* Auto margin for centering and space between inputs */
+    }
+
+    .social-media div img {
+        width: 75px; /* Adjust image size as needed */
+        margin: 0 auto; /* Center images */
+    }
+
+    .highlight-reel span {
+        font-size: 1.5em; /* Adjust font size for visibility */
+    }
+
+    .highlight-reel img {
+        width: 100%; /* Full width for better visibility */
+    }
+}

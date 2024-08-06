@@ -1,0 +1,174 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px; /* Increased padding for a thicker band */
+    background-color: #f4f4f4;
+    font-size: 1.2em;
+}
+
+.logo-title {
+    font-size: 1.5em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    /* Add more styling as required */
+}
+
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.menu a, .menu button {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.intro-section .text {
+    width: 50%;
+    font-size: 1.75em;
+}
+
+.intro-section .image {
+    width: 50%;
+    text-align: right;
+}
+
+.highlight-reel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 175px;
+    background-color: #000;
+    position: relative;
+}
+
+.highlight-reel span {
+    font-size: 3em;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    position: absolute;
+}
+
+.highlight-reel-left span {
+    animation: flyLeft 0.75s linear infinite;
+}
+
+.highlight-reel-right span {
+    animation: flyRight 0.75s linear infinite;
+}
+
+@keyframes flyLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-150%);
+        opacity: 0;
+    }
+}
+
+@keyframes flyRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150%);
+        opacity: 0;
+    }
+}
+
+
+
+.black-background-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.black-background-section .text {
+    width: 50%;
+    font-size: 1.75em;
+}
+
+.black-background-section .image {
+    width: 50%;
+    text-align: right;
+}
+
+
+/* Responsive adjustments for devices with a max width of 768px */
+@media (max-width: 768px) {
+    .top-band {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a, .menu button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;  /* Ensure full width for easier tapping */
+        text-align: center;
+    }
+
+    .intro-section, .black-background-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro-section .text, .black-background-section .text,
+    .intro-section .image, .black-background-section .image {
+        width: 100%;
+    }
+
+    .intro-section .image img, .black-background-section .image img {
+        width: 100%; /* Ensures image fills the available width */
+        height: auto; /* Maintains aspect ratio */
+        max-width: none; /* Overrides any max-width settings */
+    }
+
+    .highlight-reel span {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .highlight-reel img {
+        width: 50%; /* Adjust for smaller screens */
+    }
+
+}

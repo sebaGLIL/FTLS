@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/contact.css">
+</head>
+<body>
+    <div class="top-band">
+        <h1 class="title">CONTACT</h1>
+        <nav class="menu">
+            <a href="home.html">Home</a>
+            <a href="lore.html">Lore</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="membersarea.html">Members Area</a>
+            <a href="memorygame.html">Memory Game</a>
+            <a href="rarity.html">Rarity Tool</a>
+            <a href="derivative-tool.html">Derivative Tool</a>
+        </nav>
+    </div>
+
+    <div class="contact-section">
+        <div class="contact-form">
+            <div class="contact-info">
+                <form id="contactForm" action="javascript:void(0);" method="POST">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required><br>
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" autocomplete="off" required></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>                
+            </div>
+        </div>
+        <div class="social-media">
+            <h2>Join our community on social media</h2>
+            <a href="https://twitter.com/FTLSNFT" target="_blank">
+                <img src="/images/twitter-logo.png" alt="Follow us on Twitter">
+            </a>
+            <a href="https://instagram.com/ftlsnft" target="_blank">
+                <img src="/images/instagram-logo.png" alt="Follow us on Instagram">
+            </a>
+            <a href="https://t.co/4I4ahhAge6" target="_blank">
+                <img src="/images/discord-logo.png" alt="Join our Discord">
+            </a>
+        </div>
+       </div>
+    </div>
+
+    <div class="contact-image">
+        <img src="/images/contact-image.jpg" alt="Contact">
+    </div>
+
+    <div class="highlight-reel highlight-reel-left">
+        <span>Faster Than Light Speed</span>
+    </div>
+     
+        <div class="newsletterForm">
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email" required>
+            <button type="submit">Subscribe to Newsletter</button>
+        </form>
+        </div> 
+
+    <div class="highlight-reel highlight-reel-right">
+        <span>Faster Than Light Speed</span>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script type="module" src="/js/contact.js"></script>
+</body>
+</html>

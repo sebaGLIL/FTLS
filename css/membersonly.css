@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f4f4f4;
+    font-size: 1.2em;
+}
+
+.menu a, .menu button {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.access-section {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#connectWalletButton {
+    font-size: 1.2em; /* Larger text */
+    padding: 10px 20px; /* Larger button */
+    background-color: #007bff; /* Change to your preferred color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Space from the title */
+}
+
+#alwaysVisibleContent, #level2Content {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.media-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.media-container video, .media-container img {
+    width: 100%; /* Adjust based on your layout */
+    height: auto;
+    max-width: 600px; /* Maximum width */
+}
+
+.media-container a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.media-container a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .top-band {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a, .menu button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;  /* Ensure full width for easier tapping */
+        text-align: center;
+    }
+
+    .media-container video, .media-container img {
+        width: 100%; /* Ensures that the width of videos and images is adjusted to the viewport width */
+        height: auto; /* Maintains the aspect ratio of the media */
+        max-width: 100%; /* Prevents the media from exceeding the width of the screen */
+    }
+
+    .media-container {
+        flex-direction: column; /* Stacks media elements vertically on smaller screens */
+        align-items: center; /* Center-aligns the media elements to ensure they are in the middle */
+        padding: 0 10px; /* Adds padding to prevent media from touching the edges */
+    }
+}

@@ -1,0 +1,136 @@
+/* Existing styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background-color: #f4f4f4;
+    font-size: 1.2em;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+.menu a, .menu button {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nft-item {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.nft-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.nft-item figcaption {
+    margin-top: 5px;
+}
+
+/* New styles for the introduction section */
+
+.introduction {
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6; /* Improve readability */
+    font-size: 1.1em; /* Slightly larger font size for better readability */
+}
+
+.introduction h2 {
+    font-size: 1.3em; /* Subtitle size */
+    color: #333; /* Subtitle color */
+    margin-bottom: 10px; /* Space below subtitle */
+}
+
+.introduction p {
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .top-band {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a, .menu button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;  /* Ensure full width for easier tapping */
+        text-align: center;
+    }
+   
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nft-item {
+        width: 80%; /* Adjust NFT item width on smaller screens */
+    }
+}
+
+#connectWalletButton {
+    font-size: 1.2em; /* Larger text */
+    padding: 10px 20px; /* Larger button */
+    background-color: #007bff; /* Change to your preferred color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px; /* Space from the title */
+}
+
+/* Add a flex display to the introduction to align title and button */
+.introduction {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adds space between items when they wrap */
+    padding: 20px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.introduction h1 {
+    margin: 0; /* Removes margin to align with the button */
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .introduction {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #connectWalletButton {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

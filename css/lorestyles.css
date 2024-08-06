@@ -1,0 +1,189 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+.top-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px; /* Increased padding for a thicker band */
+    background-color: #f4f4f4;
+    font-size: 1.2em;
+}
+
+.logo-title {
+    font-size: 2em; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    /* Add more styling as required */
+}
+
+
+.logo {
+    max-width: 300px;
+    height: auto;
+}
+
+.menu a, .menu button {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+    .container {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-size: cover; /* Ensures the background image covers the whole section */
+    background-position: center; /* Centers the background image */
+    }
+    
+    .titles h2 {
+    cursor: pointer;
+    color: #FFF; /* Adjust color for visibility */
+    text-shadow: 2px 2px 4px #000; /* Shadow for better readability */
+    }
+    
+    .article {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%; /* Adjusted width for better responsiveness */
+        max-width: 750px;
+        max-height: 90vh; /* Maximum height to ensure it doesn't go off-screen */
+        padding: 20px;
+        overflow-y: auto; /* Makes content scrollable */
+        background: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        display: none; /* Initially hidden */
+        z-index: 1000;
+    }
+    
+    
+    .article .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    }
+    
+    .hidden {
+    display: none;
+    }
+   
+    
+    .black-background-section .image {
+        width: 50%;
+        text-align: right;
+    }
+
+    /* Existing styles remain unchanged */
+
+.black-background-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.black-background-section .text {
+    width: 50%;
+    font-size: 2em;
+    /* Neon effect */
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(255, 39, 255),
+        0 0 40px rgb(255, 39, 255),
+        0 0 80px rgb(255, 39, 255),
+        0 0 90px rgb(255, 39, 255),
+        0 0 100px rgb(255, 39, 255),
+        0 0 150px rgb(255, 39, 255);
+}
+
+.black-background-section .image {
+    width: 50%;
+    text-align: right;
+}
+
+/* Continue with other existing styles without changes */
+
+@media (max-width: 768px) {
+    .top-band {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .menu a, .menu button {
+        display: block;
+        margin: 10px auto;
+        width: 100%;  /* Ensure full width for easier tapping */
+        text-align: center;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .titles h2 {
+        font-size: 1.2em;
+        text-align: center; /* Ensures titles are centered */
+    }
+
+    .article {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 95%;
+        max-width: 95%;
+        max-height: 90vh; /* Allows for a bit of margin around the dialog */
+        overflow-y: auto; /* Ensures content is scrollable */
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff; /* Ensures text is readable on the dark background */
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none;
+        z-index: 1000;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 5px 10px;
+        background-color: #f00;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+    }
+
+    .black-background-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .black-background-section .text, .black-background-section .image {
+        width: 100%;
+    }
+
+    .black-background-section .image img {
+        width: 100%; /* Adjusts the image to fit the container width */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
