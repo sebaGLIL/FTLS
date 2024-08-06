@@ -32,6 +32,7 @@ Visit [https://sebaGLIL.github.io/FTLS](https://sebaGLIL.github.io/FTLS) to view
 - app.js: JS file for the members area page.
 - memoryg.js: JS file for the memory game page.
 - rarity.js: JS file for the rarity page.
+- nftDATA.json: JSON file for the rarity page
 - images/: Directory containing images used in the website.
 - other images and videos used in the website
   
