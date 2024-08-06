@@ -35,6 +35,39 @@ body, html {
     border-radius: 5px;
 }
 
+
+.social-media {
+    text-align: center; /* Center aligns the content */
+    margin: 20px 0; /* Adds vertical margin for spacing */
+    padding: 20px; /* Adds padding for better spacing */
+    background-color: #f4f4f4; /* Light gray background for the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.social-media h2 {
+    margin-bottom: 20px; /* Space between the title and images */
+    color: #333; /* Dark gray text color */
+    font-size: 24px; /* Larger font size for visibility */
+}
+
+.social-media a {
+    margin: 0 10px; /* Horizontal spacing between links */
+    display: inline-block; /* Aligns links in a row */
+    transition: transform 0.3s ease; /* Smooth scaling effect on hover */
+}
+
+.social-media img {
+    width: 50px; /* Standard size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    transition: opacity 0.3s ease; /* Smooth fade effect on hover */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Enlarges icon slightly on hover */
+    opacity: 0.8; /* Slightly fades the icon on hover */
+}
+
 .project-section {
     display: flex;
     justify-content: center;
