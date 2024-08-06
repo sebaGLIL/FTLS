@@ -6,7 +6,7 @@ let allNFTs = []; // To store all NFTs with their scores and ranks
 let currentSort = 'rarity'; // Default sort by rarity
 
 async function fetchPrecomputedData() {
-    const response = await fetch('json/nftData.json');
+    const response = await fetch('/json/nftData.json');
     if (!response.ok) throw new Error(`Failed to fetch precomputed data: ${response.statusText}`);
     return await response.json();
 }
